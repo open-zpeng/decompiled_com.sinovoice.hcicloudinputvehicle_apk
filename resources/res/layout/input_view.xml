@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sinovoice.hcicloudinputvehicle.ui.InputView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/input_area" android:background="@drawable/keyboard_back_ground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sinovoice.hcicloudinputvehicle.ui.CandidateView.CandidateView android:id="@+id/candidate" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.sinovoice.hcicloudinputvehicle.ui.KeyboardView android:id="@+id/input_keyboard" android:background="@android:color/transparent" android:paddingLeft="@dimen/keyboard_margin_left" android:paddingTop="@dimen/keyboard_margin_top" android:paddingRight="@dimen/keyboard_margin_right" android:paddingBottom="@dimen/keyboard_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/candidate" app:functionalKeyBackground="@drawable/keyboard_function_key" app:keyBackground="@drawable/keyboard_normal_key" app:keyPreviewHeight="@dimen/key_preview_height" app:keyPreviewLayout="@layout/key_preview" app:keyTextColor="@color/key_text_color" app:keyTextSize="@dimen/keyboard_key_size" app:labelTextSize="@dimen/keyboard_label_size" app:popupLayout="@layout/pop_keyboard"/>
+        <LinearLayout android:layout_gravity="bottom" android:id="@+id/stroke_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/candidate">
+            <com.sinovoice.hcicloudinputvehicle.ui.StrokeView android:id="@+id/stroke_board" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.sinovoice.hcicloudinputvehicle.ui.SymbolView android:layout_gravity="bottom" android:id="@+id/symbol" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/symbol_view_height"/>
+    <com.sinovoice.hcicloudinputvehicle.ui.CandidateView.MoreCandidateView android:layout_gravity="bottom" android:id="@+id/candidate_more" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</com.sinovoice.hcicloudinputvehicle.ui.InputView>

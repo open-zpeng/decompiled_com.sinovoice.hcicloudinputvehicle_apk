@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="false" android:drawable="@drawable/shift_uppercase_2"/>
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/shift_uppercase_2_pressed"/>
+    <item android:state_active="true" android:state_pressed="true" android:drawable="@drawable/shift_uppercase_pressed"/>
+    <item android:state_active="true" android:state_pressed="false" android:drawable="@drawable/shift_uppercase"/>
+    <item android:state_checked="false" android:state_active="false" android:state_pressed="true" android:drawable="@drawable/shift_lowercase_pressed"/>
+    <item android:drawable="@drawable/shift_lowercase"/>
+</selector>

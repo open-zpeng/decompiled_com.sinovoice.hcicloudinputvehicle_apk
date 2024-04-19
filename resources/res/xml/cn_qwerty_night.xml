@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/com.sinovoice.hcicloudinputvehicle" android:horizontalGap="@dimen/keyboard_key_horizontalGap" android:keyHeight="@dimen/keyboard_key_height" android:keyWidth="@dimen/keyboard_key_width" android:verticalGap="@dimen/keyboard_key_verticalGap">
+    <Row>
+        <Key android:codes="113" android:keyEdgeFlags="left" android:keyLabel="Q" android:keyOutputText="q" android:popupCharacters="1qQ"/>
+        <Key android:codes="119" android:keyLabel="W" android:keyOutputText="w" android:popupCharacters="w2W"/>
+        <Key android:codes="101" android:keyLabel="E" android:keyOutputText="e" android:popupCharacters="e3E"/>
+        <Key android:codes="114" android:keyLabel="R" android:keyOutputText="r" android:popupCharacters="r4R"/>
+        <Key android:codes="116" android:keyLabel="T" android:keyOutputText="t" android:popupCharacters="t5T"/>
+        <Key android:codes="121" android:keyLabel="Y" android:keyOutputText="y" android:popupCharacters="y6Y"/>
+        <Key android:codes="117" android:keyLabel="U" android:keyOutputText="u" android:popupCharacters="u7U"/>
+        <Key android:codes="105" android:keyLabel="I" android:keyOutputText="i" android:popupCharacters="i8I"/>
+        <Key android:codes="111" android:keyLabel="O" android:keyOutputText="o" android:popupCharacters="o9O"/>
+        <Key android:codes="112" android:keyEdgeFlags="right" android:keyLabel="P" android:keyOutputText="p" android:popupCharacters="pP0"/>
+    </Row>
+    <Row android:edgeMargin="@dimen/keyboard_left_margin">
+        <Key android:codes="97" android:keyEdgeFlags="left" android:keyLabel="A" android:keyOutputText="a" android:popupCharacters="aA"/>
+        <Key android:codes="115" android:keyLabel="S" android:keyOutputText="s" android:popupCharacters="sS"/>
+        <Key android:codes="100" android:keyLabel="D" android:keyOutputText="d" android:popupCharacters="dD"/>
+        <Key android:codes="102" android:keyLabel="F" android:keyOutputText="f" android:popupCharacters="fF"/>
+        <Key android:codes="103" android:keyLabel="G" android:keyOutputText="g" android:popupCharacters="gG"/>
+        <Key android:codes="104" android:keyLabel="H" android:keyOutputText="h" android:popupCharacters="hH"/>
+        <Key android:codes="106" android:keyLabel="J" android:keyOutputText="j" android:popupCharacters="jJ"/>
+        <Key android:codes="107" android:keyLabel="K" android:keyOutputText="k" android:popupCharacters="kK"/>
+        <Key android:codes="108" android:keyEdgeFlags="right" android:keyLabel="L" android:keyOutputText="l" android:popupCharacters="lL"/>
+    </Row>
+    <Row>
+        <Key android:backgroundType="functional" android:codes="201" android:keyIcon="@drawable/icon_div_night" android:keyOutputText="&apos;" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+        <Key android:codes="122" android:keyLabel="Z" android:keyOutputText="z" android:popupCharacters="zZ"/>
+        <Key android:codes="120" android:keyLabel="X" android:keyOutputText="x" android:popupCharacters="xX"/>
+        <Key android:codes="99" android:keyLabel="C" android:keyOutputText="c" android:popupCharacters="cC"/>
+        <Key android:codes="118" android:keyLabel="V" android:keyOutputText="v" android:popupCharacters="vV"/>
+        <Key android:codes="98" android:keyLabel="B" android:keyOutputText="b" android:popupCharacters="bB"/>
+        <Key android:codes="110" android:keyLabel="N" android:keyOutputText="n" android:popupCharacters="nN"/>
+        <Key android:codes="109" android:keyLabel="M" android:keyOutputText="m" android:popupCharacters="mM"/>
+        <Key android:backgroundType="functional" android:codes="-4" android:isRepeatable="true" android:keyIcon="@drawable/icon_delete_night" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+    </Row>
+    <Row android:keyboardMode="normal">
+        <Key android:backgroundType="functional" android:codes="-6" android:keyEdgeFlags="left" android:keyIcon="@drawable/icon_number_night" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+        <Key android:keyLabel="？"/>
+        <Key android:keyLabel="，"/>
+        <Key android:codes="-3" android:keyIcon="@drawable/icon_space_night" android:keyWidth="@dimen/keyboard_key_space_width"/>
+        <Key android:keyLabel="。"/>
+        <Key android:backgroundType="functional" android:codes="-7" android:keyIcon="@drawable/icon_cn_night"/>
+        <Key android:backgroundType="functional" android:codes="-2" android:keyEdgeFlags="right" android:keyIcon="@drawable/icon_confirm_night" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+    </Row>
+    <Row android:keyboardMode="bigmode">
+        <Key android:backgroundType="functional" android:codes="-6" android:keyEdgeFlags="left" android:keyIcon="@drawable/icon_number_night" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+        <Key android:keyLabel="？"/>
+        <Key android:keyLabel="，"/>
+        <Key android:codes="-3" android:keyIcon="@drawable/icon_space_night" android:keyWidth="@dimen/keyboard_key_space_width"/>
+        <Key android:keyLabel="。"/>
+        <Key android:backgroundType="functional" android:codes="-7" android:keyIcon="@drawable/icon_cn_night"/>
+        <Key android:backgroundType="functional" android:codes="-2" android:keyEdgeFlags="right" android:keyIcon="@drawable/icon_confirm_night" android:keyWidth="@dimen/keyboard_key_shift_width"/>
+    </Row>
+</Keyboard>

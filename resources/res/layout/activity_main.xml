@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/settingBtn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="设置"/>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sinovoice.hcicloudinputvehicle.ui.CandidateView.MoreCandidateView android:id="@+id/candidate_more" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/setCandidate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置候选区"/>
+    <Button android:id="@+id/clearCandidate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清空候选区"/>
+    <com.sinovoice.hcicloudinputvehicle.ui.CandidateView.CandidateView android:id="@+id/myCandidateView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.sinovoice.hcicloudinputvehicle.ui.StrokeView android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/initSys" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="初始化系统"/>
+            <Button android:id="@+id/initFunction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="初始化各种能力"/>
+            <View android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <TextView android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="输入字符: " android:singleLine="true"/>
+                <TextView android:textColor="@color/colorPrimaryDark" android:id="@+id/kbInputTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <TextView android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="composing: " android:singleLine="true"/>
+                <TextView android:textColor="@color/colorPrimaryDark" android:id="@+id/composingTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <TextView android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="候选词: " android:singleLine="true"/>
+                <TextView android:textColor="@color/colorPrimaryDark" android:id="@+id/candidateTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <TextView android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联想词: " android:singleLine="true"/>
+                <TextView android:textColor="@color/colorPrimaryDark" android:id="@+id/associateTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <View android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:textColor="@color/colorPrimaryDark" android:id="@+id/pinYinInputEdit" android:layout_width="60dp" android:layout_height="50dp" android:singleLine="true" android:maxLength="1"/>
+                <Button android:id="@+id/pinYinInput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手写输入"/>
+                <Button android:id="@+id/delete" android:layout_width="60dp" android:layout_height="wrap_content" android:text="删除"/>
+                <Button android:id="@+id/enter" android:layout_width="60dp" android:layout_height="wrap_content" android:text="确定"/>
+                <Button android:id="@+id/space" android:layout_width="60dp" android:layout_height="wrap_content" android:text="空格"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:textColor="@color/colorPrimaryDark" android:id="@+id/choosednumEdt" android:layout_width="60dp" android:layout_height="50dp" android:singleLine="true"/>
+                <Button android:id="@+id/choosednumBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="候选区选择"/>
+            </LinearLayout>
+            <View android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:textColor="@color/colorPrimaryDark" android:id="@+id/englishInputEdit" android:layout_width="60dp" android:layout_height="50dp" android:singleLine="true"/>
+                <Button android:id="@+id/englishInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="英文输入"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:textColor="@color/colorPrimaryDark" android:id="@+id/englishAssEdit" android:layout_width="60dp" android:layout_height="50dp" android:singleLine="true"/>
+                <Button android:id="@+id/englishGetAss" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="获取联想词"/>
+            </LinearLayout>
+            <View android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <Button android:id="@+id/hwrInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="手写输入"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:textColor="@color/colorPrimaryDark" android:id="@+id/hwrAssEdit" android:layout_width="60dp" android:layout_height="50dp" android:singleLine="true"/>
+                <Button android:id="@+id/hwrGetAss" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="获取联想词"/>
+            </LinearLayout>
+            <Button android:id="@+id/releaseSys" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="释放系统及其各项能力"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

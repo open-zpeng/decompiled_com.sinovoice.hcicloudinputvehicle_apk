@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/com.sinovoice.hcicloudinputvehicle" android:horizontalGap="@dimen/keyboard_key_horizontalGap" android:keyHeight="@dimen/keyboard_key_height" android:keyWidth="@dimen/keyboard_key_shift_width" android:verticalGap="@dimen/keyboard_key_verticalGap">
+    <Row>
+        <Key android:backgroundType="functional" android:codes="-60" android:keyEdgeFlags="left" android:keyIcon="@drawable/icon_number_night"/>
+        <Key android:backgroundType="functional" android:codes="-4" android:horizontalGap="@dimen/keyboard_hw_gap" android:isRepeatable="true" android:keyIcon="@drawable/icon_delete_night"/>
+    </Row>
+    <Row>
+        <Key android:keyLabel=","/>
+        <Key android:horizontalGap="@dimen/keyboard_hw_gap" android:keyLabel="."/>
+    </Row>
+    <Row>
+        <Key android:codes="-3" android:keyIcon="@drawable/icon_space_night"/>
+        <Key android:horizontalGap="@dimen/keyboard_hw_gap" android:keyLabel="?"/>
+    </Row>
+    <Row>
+        <Key android:backgroundType="functional" android:codes="-13" android:keyIcon="@drawable/icon_en_night"/>
+        <Key android:backgroundType="functional" android:codes="-2" android:horizontalGap="@dimen/keyboard_hw_gap" android:keyIcon="@drawable/icon_confirm_night"/>
+    </Row>
+</Keyboard>

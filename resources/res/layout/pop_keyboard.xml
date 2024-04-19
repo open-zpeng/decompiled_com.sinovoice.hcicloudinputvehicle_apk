@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sinovoice.hcicloudinputvehicle.ui.MiniKeyboardView android:orientation="horizontal" android:id="@+id/popup_keyboard" android:background="@drawable/key_float" android:padding="@dimen/key_pop_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

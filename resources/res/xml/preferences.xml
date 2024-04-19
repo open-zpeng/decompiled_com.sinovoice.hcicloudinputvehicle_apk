@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/setting" android:key="root_preference_screen">
+    <ListPreference android:entries="@array/setting_split_mode" android:title="@string/setting_title_split_mode" android:key="@string/setting_split_mode_key" android:defaultValue="line" android:positiveButtonText="@null" android:negativeButtonText="@string/negativebuttontext" android:entryValues="@array/setting_split_mode_values"/>
+    <CheckBoxPreference android:persistent="true" android:title="按键音" android:key="sound_on" android:defaultValue="true"/>
+    <CheckBoxPreference android:persistent="true" android:title="单词自动空格" android:key="auto_space" android:defaultValue="true"/>
+    <CheckBoxPreference android:persistent="true" android:visibility="gone" android:title="夜间皮肤" android:key="night_mode" android:defaultValue="false"/>
+</PreferenceScreen>

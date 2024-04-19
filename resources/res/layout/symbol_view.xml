@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="440px" android:baselineAligned="false" android:splitMotionEvents="false">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="294px" android:layout_marginLeft="17px" android:layout_marginTop="20px" android:splitMotionEvents="false">
+        <com.sinovoice.hcicloudinputvehicle.ui.SymbolRecyclerView android:id="@+id/symbol_title" android:fadingEdgeLength="50px" android:layout_width="116px" android:layout_height="match_parent" android:divider="@null" android:splitMotionEvents="false" android:requiresFadingEdge="vertical"/>
+        <com.sinovoice.hcicloudinputvehicle.ui.SymbolRecyclerView android:id="@+id/symbols_list_recycle" android:fadingEdgeLength="50px" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/keyboard_key_horizontalGap" android:divider="@null" android:splitMotionEvents="false" android:requiresFadingEdge="vertical"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/symbol_bottom" android:layout_width="match_parent" android:layout_height="86px" android:layout_marginLeft="17px" android:layout_marginTop="18px" android:layout_marginBottom="22px" android:splitMotionEvents="false">
+        <ImageButton android:id="@+id/btn_symbol_back" android:background="@drawable/keyboard_function_key" android:layout_width="302px" android:layout_height="match_parent"/>
+        <ImageButton android:id="@+id/btn_symbol_lock" android:background="@drawable/keyboard_function_key" android:layout_width="@dimen/symbol_item_width" android:layout_height="match_parent" android:layout_marginLeft="@dimen/symbol_item_gap"/>
+        <ImageButton android:id="@+id/btn_symbol_pre_page" android:background="@drawable/keyboard_function_key" android:layout_width="@dimen/symbol_item_width" android:layout_height="match_parent" android:layout_marginLeft="@dimen/symbol_item_gap"/>
+        <ImageButton android:id="@+id/btn_symbol_next_page" android:background="@drawable/keyboard_function_key" android:layout_width="@dimen/symbol_item_width" android:layout_height="match_parent" android:layout_marginLeft="@dimen/symbol_item_gap"/>
+        <ImageButton android:id="@+id/btn_symbol_delete" android:background="@drawable/keyboard_function_key" android:layout_width="@dimen/symbol_item_width" android:layout_height="match_parent" android:layout_marginLeft="@dimen/symbol_item_gap"/>
+    </LinearLayout>
+</LinearLayout>
